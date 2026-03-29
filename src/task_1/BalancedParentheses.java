@@ -25,7 +25,7 @@ public final class BalancedParentheses {
 
         // Print the results
         System.out.println("Result: " + result.size());
-        result.stream().collect(Collectors.joining(", ", "[", "]")).lines().forEach(System.out::println);
+        System.out.println("[" + String.join(", ", result) + "]");
     }
 
     public static void backtrack(final int n, final int open, final int close, final Stack<String> stack, final List<String> result) {
